@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khichdi Recipe - Just For You! 🍲</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 30px;
+            padding: 50px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+            animation: slideDown 0.6s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .emoji-big {
+            font-size: 80px;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        h1 {
+            color: #ff6b6b;
+            font-size: 2.5em;
+            margin: 20px 0;
+        }
+
+        .message {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            color: #856404;
+            font-size: 1.1em;
+        }
+
+        .message strong {
+            color: #ff6b6b;
+        }
+
+        h2 {
+            color: #667eea;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .ingredients, .steps {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+
+        .ingredients ul, .steps ol {
+            margin-left: 20px;
+        }
+
+        .ingredients li, .steps li {
+            margin: 12px 0;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .ingredients li::marker {
+            color: #667eea;
+        }
+
+        .steps li::marker {
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+
+        .tip {
+            background: #d4edda;
+            border-left: 5px solid #28a745;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 10px;
+            color: #155724;
+        }
+
+        .tip strong {
+            color: #28a745;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 15px;
+        }
+
+        .footer h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 30px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .time-info {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+
+        .time-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 10px;
+            flex: 1;
+            min-width: 150px;
+        }
+
+        .time-box h4 {
+            font-size: 0.9em;
+            opacity: 0.9;
+            margin-bottom: 5px;
+        }
+
+        .time-box p {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="emoji-big">🍲</div>
+            <h1>Simple Khichdi Recipe</h1>
+        </div>
+
+        <div class="message">
+            <strong>Caught you!</strong> 😤 Since you haven't eaten, I'm making sure you know how to make something simple and healthy. No excuses now! This is super easy, even you can't mess this up! 😌
+        </div>
+
+        <div class="time-info">
+            <div class="time-box">
+                <h4>Prep Time</h4>
+                <p>10 min</p>
+            </div>
+            <div class="time-box">
+                <h4>Cook Time</h4>
+                <p>20 min</p>
+            </div>
+            <div class="time-box">
+                <h4>Serves</h4>
+                <p>7 people..as you have roomates</p>
+            </div>
+        </div>
+
+        <h2>Ingredients 🥘</h2>
+        <div class="ingredients">
+            <ul>
+                <li>1 cup rice(bhat)</li>
+                <li>½ cup moong dal )</li>
+                <li>2 cups water</li>
+                <li>1 small onion</li>
+                <li>1 tomato, </li>
+                <li>½ haldi</li>
+                <li>½ jeera</li>
+                <li>2 green mirchi</li>
+                <li>1 tbsp tup or oil</li>
+                <li>Salt to taste</li>
+                <li>kotimbir</li>
+            </ul>
+        </div>
+
+        <h2>Instructions 👨‍🍳</h2>
+        <h2>Nit laksh deun</h2>
+        <div class="steps">
+            <ol>
+                <li><strong>Wash & Soak:</strong> Rinse rice and dal together 2-3 times. Soak for 10 minutes (or skip if you're super hungry!).</li>
+                
+                <li><strong>Heat the Ghee:</strong> In a pressure cooker or pot, heat ghee. Add cumin seeds and let them crackle.</li>
+                
+                <li><strong>Add Veggies:</strong> Add chopped onions (if using), green chillies, and sauté for 2 minutes till onions turn golden.</li>
+                
+                <li><strong>Add Tomatoes:</strong> Toss in chopped tomatoes and cook for another 2 minutes.</li>
+                
+                <li><strong>Add Rice & Dal:</strong> Drain and add the soaked rice and dal. Mix well.</li>
+                
+                <li><strong>Season It:</strong> Add turmeric powder, salt, and 2 cups of water. Mix everything together.</li>
+                
+                <li><strong>Cook:</strong> 
+                    <br>• <strong>Pressure Cooker:</strong> Close lid and cook for 3 whistles on medium flame.
+                    <br>• <strong>Regular Pot:</strong> Cover and cook for 20-25 minutes till rice and dal are soft and mushy.
+                </li>
+                
+                <li><strong>Garnish & Serve:</strong> Once done, garnish with fresh coriander leaves. Serve hot with yogurt or pickle!</li>
+            </ol>
+        </div>
+
+        <div class="tip">
+            <strong>💡 Pro Tip:</strong> Too thick? Add more hot water and mix. Too watery? Let it cook uncovered for a few more minutes. Khichdi should be slightly mushy and comforting - like a warm hug in a bowl! 🤗
+        </div>
+
+        <div class="tip">
+            <strong>🌟 Variations:</strong> Add veggies like carrots, peas, or beans to make it healthier. You can also add a pinch of garam masala for extra flavor!
+        </div>
+
+        <div class="footer">
+            <h3>Now go make it and eat! 💛</h3>
+            <p>Your caring one who won't let you stay hungry! 😊</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">And send me a pic when you make it! 📸</p>
+            <a href="jevlas_ka.html" class="back-btn">← Go Back</a>
+        </div>
+    </div>
+</body>
+</html>
